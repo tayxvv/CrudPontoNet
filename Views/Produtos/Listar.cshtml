@@ -1,0 +1,52 @@
+@model List<Produto>
+@{
+    ViewData["Title"] = "Contato";
+}
+<h1> Lista de Contatos </h1>
+<p>
+    <a asp-action="Produto">Novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Preco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().NCM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Quantidade)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Produto item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Preco)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NCM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantidade)
+                </td>
+                <td>
+                    <a asp-action="Editar" asp-route-id="@item.Id">Editar</a>
+                </td>
+                 <td>
+                    <a asp-action="Apagar" asp-route-id="@item.Id">Apagar</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

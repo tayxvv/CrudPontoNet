@@ -1,0 +1,34 @@
+@model Pessoa
+@{
+    ViewData["Title"] = "Editar Pessoa";
+}
+
+<h1>Editar Pessoa</h1>
+
+<form asp-action="Editar" method="post">
+    <div class="form-group">
+    <label asp-for="Nome"></label>
+        <input asp-for="Nome" class="form-control" />
+    </div>
+    <div class="form-group">
+    <label asp-for="Sobrenome"></label>
+        <input asp-for="Sobrenome" class="form-control" />
+    </div>
+    <div class="form-group">
+    <label asp-for="Endereco"></label>
+        <input asp-for="Endereco" class="form-control" />
+    </div>
+    <div class="form-group">
+    <label asp-for="Cidade"></label>
+        <input asp-for="Cidade" class="form-control" />
+    </div>
+    <div class="form-group">
+    <label asp-for="CEP"></label>
+        <input asp-for="CEP" class="form-control" />
+    </div>
+    <div class="form-group">
+    <label asp-for="Telefone"></label>
+        <input asp-for="Telefone" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Editar</button>
+</form>

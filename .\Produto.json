@@ -1,0 +1,23 @@
+[
+  {
+    "Descricao": "aaabbbb",
+    "Preco": 464236.00,
+    "NCM": "4213451",
+    "Quantidade": 2,
+    "Id": 2
+  },
+  {
+    "Descricao": "dgjsdgws",
+    "Preco": 32523,
+    "NCM": "24214",
+    "Quantidade": 2,
+    "Id": 3
+  },
+  {
+    "Descricao": "nomeNormal",
+    "Preco": 3542354.00,
+    "NCM": "214124",
+    "Quantidade": 2234,
+    "Id": 4
+  }
+]

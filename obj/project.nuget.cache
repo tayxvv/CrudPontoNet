@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "b5DZVM/ELj3eSD1oWuFk5PGCy2p9YVflAkCr+MWWOB9urJw89Oruat8jx3UCXV/uAMXPhYQy7OvHoSH9cO0KHA==",
+  "success": true,
+  "projectFilePath": "/home/ipeweb/Documents/ueg/tarefaWeb/tarefa2/tarefa2.csproj",
+  "expectedPackageFiles": [
+    "/home/ipeweb/.nuget/packages/microsoft.netcore.app.ref/8.0.3/microsoft.netcore.app.ref.8.0.3.nupkg.sha512",
+    "/home/ipeweb/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.3/microsoft.aspnetcore.app.ref.8.0.3.nupkg.sha512",
+    "/home/ipeweb/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.3/microsoft.netcore.app.host.linux-x64.8.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
