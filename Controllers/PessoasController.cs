@@ -28,6 +28,9 @@ public class PessoasController : Controller
     [HttpPost]
     public IActionResult Pessoa(Pessoa model)
     {   
+        if(!ModelState.IsValid) {
+            return View(model);
+        }
         Repositorio<Pessoa> repo = new Repositorio<Pessoa>();
         repo.Adicionar(model);
         return RedirectToAction("Listar");
