@@ -10,22 +10,39 @@ ViewData["Title"] = "Pessoa";
         @ViewData["mensagem"]
         <form asp-action="Pessoa" asp-controller="Pessoas">
             <div class="form-group">
-                <label>Nome</label><input asp-for="Nome" class="form-control" />
+                @Html.LabelFor(model => model.Nome)
+                @Html.TextBoxFor(model => model.Nome, new {@class="form-control"})
+                @Html.ValidationMessageFor(model => model.Nome)
             </div>
             <div class="form-group">
-                <label>Sobrenome</label><input asp-for="Sobrenome" class="form-control" />
+                @Html.LabelFor(model => model.Idade)
+                @Html.TextBoxFor(model => model.Idade, new {@class="form-control"})
+                @Html.ValidationMessageFor(model => model.Idade)
             </div>
             <div class="form-group">
-                <label>Endereco</label><input asp-for="Endereco" class="form-control" />
+                @Html.LabelFor(model => model.Sobrenome)
+                @Html.TextBoxFor(model => model.Sobrenome, new {@class="form-control"})
+                @Html.ValidationMessageFor(model => model.Sobrenome)
             </div>
             <div class="form-group">
-                <label>Cidade</label><input asp-for="Cidade" class="form-control" />
+                @Html.LabelFor(model => model.Endereco)
+                @Html.TextBoxFor(model => model.Endereco, new {@class="form-control"})
+                @Html.ValidationMessageFor(model => model.Endereco)
             </div>
             <div class="form-group">
-                <label>CEP</label><input asp-for="CEP" class="form-control" />
+                @Html.LabelFor(model => model.Cidade)
+                @Html.TextBoxFor(model => model.Cidade, new {@class="form-control"})
+                @Html.ValidationMessageFor(model => model.Cidade)
             </div>
             <div class="form-group">
-                <label>Telefone</label><input asp-for="Telefone" class="form-control" />
+                @Html.LabelFor(model => model.CEP)
+                @Html.TextBoxFor(model => model.CEP, new {@class="form-control"})
+                @Html.ValidationMessageFor(model => model.CEP)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Telefone)
+                @Html.TextBoxFor(model => model.Telefone, new {@class="form-control"})
+                @Html.ValidationMessageFor(model => model.Telefone)
             </div>
             <input type="submit" value="Salvar" class="btn btn-success" style="margin-top: 20px;" />
         </form>
